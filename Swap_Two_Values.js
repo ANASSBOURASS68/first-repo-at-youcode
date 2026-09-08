@@ -1,9 +1,9 @@
 let firstColor = "red";
 let secondColor = "blue";
 
-let temp = firstColor;
+let color = firstColor;
 firstColor = secondColor;
-secondColor = temp;
+secondColor = color;
 
 console.log(firstColor);  
 console.log(secondColor); 
