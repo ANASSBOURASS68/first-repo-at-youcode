@@ -22,5 +22,6 @@ let res=1;
 for (let i=6 ; i>=1 ;i--)
 {
     res = res*i;
-    console.log(res)
+
 }
+console.log(res)
