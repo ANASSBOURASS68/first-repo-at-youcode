@@ -17,8 +17,8 @@
 // TODO: écris ta solution ici.
 for (let n = 100; n <= 999; n++) {
 
-    let centaines = Math.floor(n / 100);
-    let dizaines = Math.floor((n / 10) % 10);
+    let centaines = n / 100 | 0;
+    let dizaines = (n / 10) % 10 |0;
     let unites = n % 10;
 
     let somme = centaines ** 3 + dizaines ** 3 + unites ** 3;
