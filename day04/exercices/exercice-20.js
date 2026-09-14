@@ -1,0 +1,35 @@
+/**
+ * ─────────────────────────────────────────────────────────────
+ * JOUR 04 · EXERCICE 20 · NIVEAU 3 : DÉFI (AVANCÉS)
+ * GÉNÉRATEUR DE SLUG SEO
+ * ─────────────────────────────────────────────────────────────
+ *
+ * 🎯 MISSION
+ * En développement web, une URL amicale (Slug) transforme le titre d'un article en texte propre.
+ * Transformez "Les 10 secrets de JavaScript !" en "les-10-secrets-de-javascript".
+ * Règles : Tout en minuscules, remplacez les espaces par des tirets, supprimez les caractères de ponctuation (!, ?, etc.).
+ *
+ * 📖 Consigne détaillée : ../03-exercices.md#exercice-20
+ * ▶️ Commande : node day04/exercices/exercice-20.js
+ */
+'use strict';
+
+// 1. Identifie les données nécessaires.
+// 2. Écris ta solution sous cette ligne.
+// TODO: écris ta solution ici.
+
+let url = "Les 10 secrets de JavaScript !";
+let newurl = url.toLowerCase()
+.split(" ")
+.filter(function(element ){
+    let code = element.charCodeAt(0);
+
+        return (code >= 97 && code <= 122) ||
+            (code >= 48 && code <= 57) ||
+            element === " ";
+})
+.join("-")
+
+
+
+console.log(newurl)
